@@ -446,11 +446,25 @@ html {
 }
 
 #diseños .swiper {
-  width: 61%;
-  height: 525px;
+  width: 40%;
+  height: 600px;
 }
 #diseños img {
   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #diseños .swiper {
+    width: 496px;
+    height: 521px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #diseños .swiper {
+    width: 435px;
+    height: 445px;
+  }
 }
 /* *********************/
 /* seccion C O N T A C T O */
