@@ -441,19 +441,17 @@ html {
   text-decoration: underline;
   text-decoration-color: #ff5080;
   text-decoration-thickness: 5px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
-#diseños .galeria {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
+#diseños .swiper {
+  width: 61%;
+  height: 525px;
 }
-
-#diseños .galeria img {
-  max-width: 400px;
-  padding: 1rem;
+#diseños img {
+  width: 100%;
 }
-
 /* *********************/
 /* seccion C O N T A C T O */
 /* *********************/

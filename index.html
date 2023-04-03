@@ -15,6 +15,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="estilo.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
     <title>MM Desarrollador Web</title>
   </head>
 
@@ -152,19 +156,43 @@
 
        <!-- SECCION DISEÑOS -->
 <section id="diseños">
-<div class="diseños">
-  <h3 class="dise">Diseño Grafico </h3>
-  <div class="galeria">
-  <img src="./img/presentacion.jpg" alt="">
-  <img src="./img/enigma.jpg" alt="">
+  <div class="diseños">
+    <h3 class="dise">Diseño Digital Muestras </h3>
   </div>
-
-  <div class="galeria">
-  <img src="./img/3D_Mesa de trabajo 1.jpg" alt="">
-  <img src="./img/LogoFLex.jpg" alt="">
+  <div class="swiper">
+   
+    <div class="swiper-wrapper">
+     
+      <div class="swiper-slide">
+        <img src="./img/presentacion.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/enigma.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/3D_Mesa de trabajo 1.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img//LogoFlex.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/tarjflex.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/logos.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/detalle.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/muestraflayer.jpg" alt="">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-scrollbar"></div>
   </div>
-
-</div>
 </section>
 
 
@@ -289,5 +317,30 @@ class="input-mitad"
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
+
   </body>
 </html>
