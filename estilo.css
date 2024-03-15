@@ -142,6 +142,7 @@ html {
   padding: 100px 15px;
   color: #111135;
   display: flex;
+  justify-content: space-around;
 }
 
 #sobremi .contenedor-foto {
@@ -153,11 +154,14 @@ html {
   padding: 20px;
   width: 100%;
   border-radius: 20px;
-  background-color: #f3f3f3;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 52px
 }
 
 #sobremi .sobremi {
   margin: 0 40px;
+  width: 45%;
 }
 
 #sobremi .sobremi .titulo-seccion {
@@ -193,6 +197,7 @@ html {
   line-height: 25px;
   color: #565656;
   margin-bottom: 12px;
+  text-align: justify;
 }
 
 #sobremi .sobremi a {
@@ -339,19 +344,32 @@ html {
 }
 
 .contenedor-skills .skill .barra .barra-progreso3 {
-  background-color: #fff;
+ 
   width: 90%;
   height: 6px;
   animation: progreso3 2s forwards;
 }
 
 .contenedor-skills .skill .barra .barra-progreso4 {
-  background-color: #fff;
+ 
   width: 85%;
   height: 6px;
   animation: progreso4 2s forwards;
 }
+.contenedor-herramientas {
+  display: flex;
+  justify-content: space-between;
+}
 
+.columna {
+  flex: 1;
+}
+
+.skill {
+  margin-bottom: 10px;
+  padding: 10px;
+ 
+}
 @keyframes progreso1 {
   0% {
     width: 0;
@@ -395,6 +413,7 @@ html {
   max-width: 1100px;
   padding: 100px 0;
   margin: auto;
+  
 }
 
 #portfolio .titulo-seccion {
@@ -407,26 +426,54 @@ html {
   text-decoration-thickness: 5px;
 }
 
-#portfolio .fila {
+.lista-proyectos {
   display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  margin: 30px 0;
+    justify-content: center;
+    margin-top: 70px ;
+    flex-direction: column;
+    align-items: center;
 }
-
-#portfolio .fila .proyecto {
-  max-width: 450px;
-
-  margin: 0 10px;
-  position: relative;
-  overflow: hidden;
+.lista-proyectos-descripcion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 17px 
 }
-
-#portfolio .fila .proyecto .info {
-  background-color: rgb(255, 255, 255);
-  color: #0a0000;
-  text-align: center;
-  font-weight: 10px;
+.contenedor-title-adv{
+  width: 70%;
+  display: flex;
+  padding-bottom: 7px;
+}
+.h1name-proyect{
+  font-size: 18px;
+}
+.name-proyect{
+  font-size: 17px;
+  color: #551A8B;
+  padding-left: 14px
+}
+.contenedor-title{
+  width: 70%;
+}
+ .h1-styles{
+  font-size: 18px;
+}
+ .h2-styles{
+  font-size: 18px;
+  font-weight: 400;
+}
+ .contenedor-p{
+  width: 70%;
+}
+.p-descripcion{
+  text-align: justify;
+    padding-top: 16px;
+    font-size: 17px;
+    line-height: 1.4;
+}
+.a-link{
+  padding-top: 6px;
+  font-size: 17px;
 }
 
 /* *********************/
@@ -531,6 +578,46 @@ html {
   background-color: #ff5080;
   color: #fff;
 }
+
+.botones-flotantes {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+.botones-flotantes a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.botones-flotantes .boton-whatsapp {
+  background-color: #25d366; /* Color de fondo de WhatsApp */
+}
+
+.botones-flotantes .boton-correo {
+  background-color: #ff5733; /* Color de fondo de correo */
+}
+
+.botones-flotantes .boton-linkedin {
+  background-color: #0077b5; /* Color de fondo de LinkedIn */
+}
+
+/* Estilos cuando se pasa el mouse por encima */
+.botones-flotantes a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* *********************/
 /* seccion F O O T E R */
 /* *********************/
