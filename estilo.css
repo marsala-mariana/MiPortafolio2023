@@ -215,6 +215,8 @@ html {
   background-color: #ff5080;
   color: #fff;
 }
+
+
 /* *********************/
 /* seccion S E R V I C I O S */
 /* *********************/
@@ -300,7 +302,7 @@ html {
   background-size: cover;
   color: #fff;
   background-position: center center;
-  padding: 100px 0;
+  padding: 40px 0;
   text-align: center;
 }
 
@@ -314,13 +316,7 @@ html {
   justify-content: space-between;
 }
 
-.contenedor-skills .skill .lista {
-  display: inline-block;
-  margin-right: 20px;
-  height: 10px;
-  width: 10px;
-  background-color: #fff;
-}
+
 
 .contenedor-skills .skill .barra {
   background-color: #919191;
@@ -367,8 +363,14 @@ html {
 
 .skill {
   margin-bottom: 10px;
-  padding: 10px;
  
+ 
+}
+.habilidades{
+  padding-bottom: 20px;
+  text-transform: uppercase;
+    font-size: 19px;
+
 }
 @keyframes progreso1 {
   0% {
@@ -493,7 +495,7 @@ html {
 }
 
 #diseños .swiper {
-  width: 40%;
+  width: 53%;
   height: 600px;
 }
 #diseños img {
@@ -688,6 +690,9 @@ footer a {
     font-size: 25px;
     text-align: center;
   }
+  #sobremi .sobremi  {
+    width: 85%;
+  }
   /* seccion MIS SERVICIOS */
   #servicios {
     padding: 50px 15px;
@@ -724,4 +729,20 @@ footer a {
     width: 100%;
     margin-bottom: 15px;
   }
+}
+
+@media screen and (max-width: 426px){
+#sobremi .sobremi {
+  width: 80%;
+}
+.contenedor-title-adv{
+  width: 85%;
+}
+.contenedor-title{
+  width: 85%;
+}
+.contenedor-p{
+  width: 85%;
+}
+
 }
