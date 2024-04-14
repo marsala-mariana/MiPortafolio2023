@@ -74,7 +74,7 @@ html {
 
 #inicio .contenido .presentacion {
   max-width: 1100px;
-  height: 100vh;
+  height: 116vh;
   margin: auto;
   color: #fff;
   display: flex;
@@ -84,7 +84,7 @@ html {
 }
 
 #inicio .contenido .presentacion .bienvenida {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -125,6 +125,56 @@ html {
   background-color: #ff5080;
 }
 
+.tecnologias-utilizadas {
+  margin-top: 20px;
+}
+
+.iconos-programas {
+  list-style-type: none;
+  display: flex;
+  background-color: white;
+  padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    border-radius: 24px;
+}
+
+.iconos-programas li {
+  margin-right: 10px; 
+    position: relative;
+}
+
+.iconos-programas li:last-child {
+  margin-right: 0;
+}
+
+.iconos-programas img {
+  width: 30px; /* Establecer el ancho deseado para todos los iconos */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+.tooltip {
+  visibility: hidden; 
+  background-color: white; 
+  color: #000; 
+  text-align: center; 
+  border-radius: 6px; 
+  padding: 5px 10px; 
+  position: absolute; 
+  bottom: 140%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  opacity: 0; 
+  transition: opacity 0.3s, visibility 0.3s; 
+  z-index: 1; 
+  font-size: 12px;
+}
+
+.iconos-programas li:hover .tooltip {
+  visibility: visible; /* Hacer visible el tooltip al pasar el mouse */
+  opacity: 1; /* Hacer visible el tooltip al pasar el mouse */
+}
+
 #icono-nav {
   color: #fff;
   display: none;
@@ -151,7 +201,7 @@ html {
   border-radius: 20px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-top: 52px
+  padding-top: 52px;
 }
 
 #sobremi .sobremi {
@@ -163,7 +213,7 @@ html {
   font-size: 34px;
   font-weight: bold;
   margin: 20px 0;
-  letter-spacing: 2px;
+ 
 }
 
 #sobremi .sobremi h2 span {
@@ -202,216 +252,91 @@ html {
   color: #fff;
 }
 
-
-
 .contenedor-skills {
-  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)),
+  background: linear-gradient(#aaffff4d, rgb(33 16 16 / 97%)),
     url("img/fondo-skills.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   background-position: center center;
-  padding: 40px 0;
+  padding-top:1px;
+  padding-bottom: 0;
+  margin-top: 62px;
   text-align: center;
 }
 
-.contenedor-skills .skill {
-  max-width: 600px;
-  margin: 30px auto;
-}
-
-.contenedor-skills .skill .info {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
-.contenedor-skills .skill .barra {
-  background-color: #919191;
-  width: 100%;
-  height: 6px;
-  margin: 10px 0px;
-}
-
-.contenedor-skills .skill .barra .barra-progreso1 {
-  background-color: #fff;
-  width: 95%;
-  height: 6px;
-  animation: progreso1 2s forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso2 {
-  background-color: #fff;
-  width: 90%;
-  height: 6px;
-  animation: progreso2 2s forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso3 {
- 
-  width: 90%;
-  height: 6px;
-  animation: progreso3 2s forwards;
-}
-
-.contenedor-skills .skill .barra .barra-progreso4 {
- 
-  width: 85%;
-  height: 6px;
-  animation: progreso4 2s forwards;
-}
-.contenedor-herramientas {
-  display: flex;
-  justify-content: space-between;
-}
-
-.columna {
-  flex: 1;
-}
-
-.skill {
-  margin-bottom: 10px;
- 
- 
-}
-.habilidades{
-  padding-bottom: 20px;
+.habilidades {
+ margin-top:104px;
   text-transform: uppercase;
-    font-size: 19px;
-
-}
-@keyframes progreso1 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 95%;
-  }
-}
-
-@keyframes progreso2 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@keyframes progreso3 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
-  }
-}
-
-@keyframes progreso4 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 85%;
-  }
+  font-size: 20px;
 }
 
 #portfolio {
   max-width: 1100px;
-  padding: 100px 0;
+ padding-bottom: 128px;
   margin: auto;
-  
+  scroll-margin-top: 145px
 }
-
 
 #portfolio .lista-proyectos {
   display: flex;
-    justify-content: center;
-    margin-top: 70px ;
-    flex-direction: column;
-    align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+  flex-direction: column;
+  align-items: center;
 }
-#portfolio .lista-proyectos-descripcion{
+#portfolio .lista-proyectos-descripcion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 17px 
+  padding-top: 17px;
 }
-#portfolio .contenedor-title-adv{
+#portfolio .contenedor-title-adv {
   width: 70%;
   display: flex;
   padding-bottom: 7px;
 }
-#portfolio .h1name-proyect{
-  font-size: 18px;
+#portfolio .h1name-proyect {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 300;
 }
-#portfolio .name-proyect{
-  font-size: 17px;
-  color: #551A8B;
-  padding-left: 14px
+#portfolio .name-proyect {
+  font-size: 20px;
+  padding-left: 10px;
+  font-weight: 300;
 }
-#portfolio .contenedor-title{
+#portfolio .contenedor-title {
   width: 70%;
 }
-#portfolio .h1-styles{
-  font-size: 18px;
+#portfolio .h1-styles {
+  font-size: 20px;
+   text-align: left;
+   font-weight: 300;
 }
-#portfolio .h2-styles{
-  font-size: 18px;
+#portfolio .h2-styles {
+  font-size: 20px;
   font-weight: 400;
+  text-align: left;
+  padding-top: 8px;
 }
-#portfolio .contenedor-p{
+#portfolio .contenedor-p {
   width: 70%;
 }
-#portfolio .p-descripcion{
+#portfolio .p-descripcion {
   text-align: justify;
-    padding-top: 16px;
-    font-size: 17px;
-    line-height: 1.4;
+  padding-top: 16px;
+  font-size: 18px;
+  line-height: 1.4;
 }
-.a-link{
+.a-link {
   padding-top: 6px;
-  font-size: 17px;
+  font-size: 20px;
   cursor: pointer;
+  text-align: left;
 }
 
-
-
-#diseños .dise {
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-  color: #111135;
-  text-decoration: underline;
-  text-decoration-color: #ff5080;
-  text-decoration-thickness: 5px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
-#diseños .swiper {
-  width: 53%;
-  height: 600px;
-}
-#diseños img {
-  width: 100%;
-}
-
-@media screen and (max-width: 800px) {
-  #diseños .swiper {
-    width: 496px;
-    height: 521px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #diseños .swiper {
-    width: 435px;
-    height: 445px;
-  }
-}
 #contacto .botones-flotantes {
   position: fixed;
   right: 20px;
@@ -434,23 +359,21 @@ html {
 }
 
 #contacto .botones-flotantes .boton-whatsapp {
-  background-color: #25d366; 
+  background-color: #25d366;
 }
 
 #contacto .botones-flotantes .boton-correo {
-  background-color: #ff5733; 
+  background-color: #ff5733;
 }
 
 #contacto .botones-flotantes .boton-linkedin {
-  background-color: #0077b5; 
+  background-color: #0077b5;
 }
-
 
 #contacto .botones-flotantes a:hover {
   opacity: 0.8;
   cursor: pointer;
 }
-
 
 footer {
   background-color: #000;
@@ -515,18 +438,15 @@ footer a {
     font-size: 25px;
     text-align: center;
   }
-  #sobremi .sobremi  {
+  #sobremi .sobremi {
     width: 85%;
   }
 
-  
- 
-  .contenedor-skills {
-    padding: 50px 20px;
-  }
- 
+
+
   #portfolio {
-    padding: 20px 0;
+    padding-bottom: 100;
+    padding-top: 0;
   }
   #portfolio .fila {
     display: block;
@@ -535,18 +455,17 @@ footer a {
     margin: 10px auto;
   }
 }
-@media screen and (max-width: 426px){
-#sobremi .sobremi {
-  width: 80%;
-}
-.contenedor-title-adv{
-  width: 85%;
-}
-.contenedor-title{
-  width: 85%;
-}
-.contenedor-p{
-  width: 85%;
-}
-
+@media screen and (max-width: 426px) {
+  #sobremi .sobremi {
+    width: 80%;
+  }
+  .contenedor-title-adv {
+    width: 85%;
+  }
+  .contenedor-title {
+    width: 85%;
+  }
+  .contenedor-p {
+    width: 85%;
+  }
 }
