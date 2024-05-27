@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+
 }
 
 html {
@@ -11,6 +13,7 @@ html {
 #inicio {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("img/fondo-inicio.jpg");
+      font-family: 'Poppins', sans-serif;
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -91,7 +94,7 @@ html {
 }
 
 #inicio .contenido .presentacion h2 {
-  font-size: 55px;
+  font-size: 32px;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -112,7 +115,7 @@ html {
   text-decoration: none;
   display: inline-block;
   margin: 25px;
-  padding: 20px 25px;
+  padding: 13px 25px;
   border: 2px solid #fff;
   border-radius: 50px;
   color: #fff;
@@ -125,55 +128,6 @@ html {
   background-color: #ff5080;
 }
 
-.tecnologias-utilizadas {
-  margin-top: 20px;
-}
-
-.iconos-programas {
-  list-style-type: none;
-  display: flex;
-  background-color: white;
-  padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 4px;
-    border-radius: 24px;
-}
-
-.iconos-programas li {
-  margin-right: 10px; 
-    position: relative;
-}
-
-.iconos-programas li:last-child {
-  margin-right: 0;
-}
-
-.iconos-programas img {
-  width: 30px; /* Establecer el ancho deseado para todos los iconos */
-  height: auto; /* Altura automática para mantener la proporción */
-}
-.tooltip {
-  visibility: hidden; 
-  background-color: white; 
-  color: #000; 
-  text-align: center; 
-  border-radius: 6px; 
-  padding: 5px 10px; 
-  position: absolute; 
-  bottom: 140%; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  opacity: 0; 
-  transition: opacity 0.3s, visibility 0.3s; 
-  z-index: 1; 
-  font-size: 12px;
-}
-
-.iconos-programas li:hover .tooltip {
-  visibility: visible; /* Hacer visible el tooltip al pasar el mouse */
-  opacity: 1; /* Hacer visible el tooltip al pasar el mouse */
-}
 
 #icono-nav {
   color: #fff;
@@ -210,10 +164,8 @@ html {
 }
 
 #sobremi .sobremi h2 {
-  font-size: 34px;
+  font-size: 20px;
   font-weight: bold;
-  margin: 20px 0;
- 
 }
 
 #sobremi .sobremi h2 span {
@@ -221,7 +173,7 @@ html {
 }
 
 #sobremi .sobremi h3 {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -229,8 +181,8 @@ html {
 }
 
 #sobremi .sobremi p {
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 12px;
+  line-height: 20px;
   color: #565656;
   margin-bottom: 12px;
   text-align: justify;
@@ -253,7 +205,7 @@ html {
 }
 
 .contenedor-skills {
-  background: linear-gradient(#aaffff4d, rgb(33 16 16 / 97%)),
+ background: linear-gradient(#aaffff4d, rgb(33 16 16 / 97%)),
     url("img/fondo-skills.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -264,6 +216,7 @@ html {
   padding-bottom: 0;
   margin-top: 62px;
   text-align: center;
+  display: flex;
 }
 
 .habilidades {
@@ -281,10 +234,11 @@ html {
 
 #portfolio .lista-proyectos {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 26px;
   flex-direction: column;
   align-items: center;
+  flex-direction: row;
 }
 #portfolio .lista-proyectos-descripcion {
   display: flex;
@@ -336,24 +290,139 @@ html {
   cursor: pointer;
   text-align: left;
 }
+.titlePro{
+  text-align: center;
+  font-size: 20px;
+    font-weight: bold;
+}
+.card {
+  width: 100%;
+  max-width: 300px;
+  min-width: 40%;
+  height: 250px;
+  background-color: #292929;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.icon {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(90deg, #7eaaff 0%, #ff48fb 40%, rgba(0, 0, 0, 0.28) 60%);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+}
+
+.icon img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+.card .title {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.card .text {
+  width: 100%;
+  height: 0;
+  margin: 0 auto;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  max-height: 0;
+}
+.card:hover {
+   width: 400px; 
+  height: 400px; 
+}
+.card:hover .text {
+  height: auto;
+  max-height: 3000px;
+  opacity: 1;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.card:hover .icon {
+  background-position: -120px;
+  transition: all 0.3s ease;
+}
+
+.card .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card a {
+  color: white;
+  transition: .4s ease-in-out;
+}
+
+.card button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: .4s ease-in-out;
+}
+
+.card button:hover {
+  cursor: pointer;
+}
 
 #contacto .botones-flotantes {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 16px;
+  bottom: 235px;
   z-index: 1000;
 }
 
 #contacto .botones-flotantes a {
   display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 34px;
+  height: 34px;
+  line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
@@ -379,17 +448,11 @@ footer {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 30px 0;
+  padding: 9px 0;
 }
-
-footer a {
-  text-decoration: none;
-  color: #fff;
-  display: inline-block;
-  margin: 5px;
-  font-size: 26px;
+.titleFooter{
+  font-size: 12px;
 }
-
 @media screen and (max-width: 800px) {
   .redes {
     display: none;
@@ -417,12 +480,14 @@ footer a {
     display: block;
   }
   #inicio .contenido .presentacion h2 {
-    font-size: 40px;
+    font-size:35px;
   }
 
   #sobremi {
     padding: 50px 0;
     display: block;
+        padding-top: 146px;
+    padding-bottom: 145px;
   }
   #sobremi .contenedor-foto {
     max-width: 200px;
@@ -442,11 +507,11 @@ footer a {
     width: 85%;
   }
 
-
-
   #portfolio {
     padding-bottom: 100;
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
   }
   #portfolio .fila {
     display: block;
@@ -454,11 +519,47 @@ footer a {
   #portfolio .fila .proyecto {
     margin: 10px auto;
   }
+  .titlePro{
+    font-size: 25px;
+  }
 }
 @media screen and (max-width: 426px) {
+  #contacto .botones-flotantes{
+    right: 12px;
+    bottom: 9px;
+  }
+  #inicio .contenido .presentacion .bienvenida{
+    font-size: 18px;
+    margin-bottom: 11px;
+  }
+      #inicio .contenido .presentacion h2 {
+      font-size: 20px;
+      }
+      #inicio .contenido .presentacion a{
+        margin: 2px;
+    padding: 6px 21px;
+        font-size: 13px;
+      }
   #sobremi .sobremi {
     width: 80%;
   }
+  #sobremi .contenedor-foto{
+    max-width: 137px;
+  }
+      #sobremi .sobremi h2 {
+                font-size: 16px;
+      }
+      #sobremi .sobremi h3 {
+      font-size: 12px;
+      text-align: center;
+      }
+      .titlePro{
+        font-size: 16px;
+      }
+      .icon{
+            width: 69px;
+    height: 69px;
+      }
   .contenedor-title-adv {
     width: 85%;
   }
@@ -468,4 +569,8 @@ footer a {
   .contenedor-p {
     width: 85%;
   }
+#portfolio .lista-proyectos{
+flex-direction: column;
+}    
+  
 }
